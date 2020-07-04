@@ -163,7 +163,7 @@ function suitup-git-compare {
 ##############################################
 
 function suitup-git-current-branch {
-  git branch 2>/dev/null | grep '^*' | colrm 1 2
+  git rev-parse --abbrev-ref HEAD
 }
 
 function suitup-git-current-remote-branch {
